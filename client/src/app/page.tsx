@@ -14,7 +14,7 @@ export default function Home() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch('http://localhost:5000/api/items');
+      const res = await fetch('http://localhost:2000/api/items');
       const data = await res.json();
       setBackendData(data);
     };
